@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+* {
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+html,
+body {
+    overflow: hidden;
+    background-color: #000;
+}
+
+body {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.button_container a {
+    text-decoration: none;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    filter: blur(0px) brightness(0.4);
+}
+
+.image_container {
+    overflow: hidden;
+    transform: translateY(-60%);
+    margin-bottom: 0;
+}
+
+.image_container img {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.container {
+    /*psoition center*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 500px; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+@media only screen and (max-width:600px) {
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+
+}
+
+.box {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    border-radius: 35px;
+    background: #1c1c1cab;
+    box-shadow: 5px 5px 10px #181818,
+        -5px -5px 10px #202020;
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+    /* border: 1px solid rgba(118, 118, 118, 0.25); */
+}
+
+.name {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: #fff;
+    display: inline-block;
+    margin: 2px;
+}
+
+.tag_line {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    margin: 10px;
+}
+
+.profession {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline-block;
+    margin: 20px;
+}
+
+.paragraph {
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.tri-button-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tri-button-container:nth-child(1) {
+    background-color: #1c1c1c;
+}
+
+.tri-button-container>label {
+    margin-left: -8px;
+    cursor: pointer;
+}
+
+.tri-state-toggle {
+    display: inline-block;
+    background: #161616;
+    max-width: auto;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.tri-button-container>.tri-button {
+    appearance: none;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.button_container button {
+    padding: 12px 35px;
+    height: 100%;
+    border: 0;
+    margin: 0 15px;
+    border-radius: 5px;
+    background: rgba(30, 30, 30, 0.8);
+    ;
+    outline: none;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.button_container span {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.socials_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin: 10px;
+    border-radius: 35px;
+    background: #00000044;
+    box-shadow: 5px 5px 10px #161616,
+        -5px -5px 10px #1e1e1e;
+    display: inline-flex;
+    /* width: 350px; */
+    border-radius: 5px;
+    padding: 8px 16px;
+    gap: 50px
+    
+    
+}
+
+.socials_container a {
+    display: inline;
+    margin: 5px 0 0 0;
+}
+.socials_container i {
+    height: 22;
+    width: 22;
+}
+
+.footer {
+    font-size: 0.5rem;
+    margin: 15px;
+    font-weight: 300;
+}
